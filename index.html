@@ -37,7 +37,7 @@
 								ng-options="system.uri as system.name for system in searchIdentifierSystems()"></select>
 						<input id="identifier" name="identifier" type="text" class="form-control" ng-model="Identifier" />
 					</div>
-
+<Br>
 					<div class="form-group" ng-show="searchFieldEnabled('name')">
 						<label for="name">{{ searchFieldLabel('name') }}</label>
 						<input id="name" name="name" type="text" class="form-control" ng-model="Name" />
@@ -49,7 +49,7 @@
 							</select>
 						</div>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('family')">
 						<label for="lastName">{{ searchFieldLabel('family') }}</label>
 						<input id="lastName" name="lastName" type="text" class="form-control" ng-model="Family" />
@@ -61,7 +61,7 @@
 							</select>
 						</div>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('given')">
 						<label for="firstName">{{ searchFieldLabel('given') }}</label>
 						<input id="firstName" name="firstName" type="text" class="form-control" ng-model="Given">
@@ -73,12 +73,12 @@
 							</select>
 						</div>
 					</div>
-
+<Br>
 					<div class="form-group" ng-show="searchFieldEnabled('birthdate')">
 						<label for="birthDate">{{ searchFieldLabel('birthdate') }}</label>
 						<input id="birthDate" name="birthDate" type="text" class="form-control" placeholder="yyyy-mm-dd" ng-model="BirthDate">
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('age')">
 						<label for="age">{{ searchFieldLabel('age') }}</label>
 						<input id="age" name="age" type="text" class="form-control" ng-model="Age">
@@ -92,7 +92,7 @@
 							</select>
 						</div>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('address')">
 						<label for="address">{{ searchFieldLabel('address') }}</label>
 						<input id="address" name="address" type="text" class="form-control" ng-model="Address">
@@ -104,7 +104,7 @@
 							</select>
 						</div>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('gender')">
 						<label for="gender">{{ searchFieldLabel('gender') }}</label>
 						<select id="gender" class="form-control"
@@ -113,7 +113,7 @@
 							<option value="">&lt;Any&gt;</option>
 						</select>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('race')">
 						<label for="race">{{ searchFieldLabel('race') }}</label>
 						<select id="race" class="form-control"
@@ -122,7 +122,7 @@
 							<option value="">&lt;Any&gt;</option>
 						</select>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('ethnicity')">
 						<label for="ethnicity">{{ searchFieldLabel('ethnicity') }}</label>
 						<select id="ethnicity" class="form-control"
@@ -131,7 +131,7 @@
 							<option value="">&lt;Any&gt;</option>
 						</select>
 					</div>
-
+<br>
 					<div class="form-group" ng-show="searchFieldEnabled('telecom')">
 						<label for="telecom">{{ searchFieldLabel('telecom') }}</label>
 						<input id="telecom" name="telecom" type="text" class="form-control" ng-model="Telecom">
@@ -143,7 +143,7 @@
 							</select>
 						</div>
 					</div>
-
+<br>
 					<div class="form-group">
 						<label for="sort">Sort by:</label>
 						<select id="sort" class="form-control"
@@ -152,20 +152,13 @@
 							<option value="">&lt;None&gt;</option>
 						</select>
 					</div>
-
+<br><br>
 					<button type="submit" class="btn btn-success" ng-click="search('Patient')" ng-disabled="searchDisabled()">Search</button>
 					<button class="btn btn-default" ng-click="configure()">Configure</button>
 
 				</form>
-
-				<div class="logo">
-					<a href="http://careevolution.com" target="_blank">
-						<img src="Images/CareEv-logo-small.png" title="Patient Demographics - Copyright © 2015 CareEvolution Inc." />
-					</a>
-				</div>
-
 			</div>
-    
+<br><br>    
         
     <h4>Current Patient</h4>
     <div id="patient">Loading...</div>
